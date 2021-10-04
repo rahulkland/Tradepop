@@ -11,17 +11,17 @@ import re
 import pickle
 
 # If you are using Firefox
-driver = webdriver.Firefox()
+# driver = webdriver.Firefox()
 # If you are using Chrome
-# driver = webdriver.Chrome()
+driver = webdriver.Chrome()
 
 # Load all the credentials from .env file
 
-USERNAME = config('USERNAME')
-PASSWORD = config('PASSWORD')
-PANCARD = config('PANCARD')
-APPID = config('APPID')
-SECRETID = config('SECRETID')
+USERNAME = 'XR11602'
+PASSWORD = 'Hubble2426!'
+PANCARD = 'AQCPV3101H'
+APPID = '9BPNFGJHZ5-100'
+SECRETID = 'LJCTDO2WQY'
 
 
 def generate_token_url(app_id, secret_id):
