@@ -45,7 +45,17 @@ print(r)
 print('Break No 2')
 
 print(r_attribs)
+print(r.content)
 print('Break No 3')
+print(r.headers)
+
+print(r.json)
+
+print(r.request)
+
+print(r.links)
+
+print(r.history)
 
 #auth_code = r["auth_code"]
 print('auth_code')
