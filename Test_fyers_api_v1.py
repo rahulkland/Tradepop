@@ -23,7 +23,7 @@
 # ------------------------------------  AUTH CODE ---------------------------------- #
 
 def main():
-  auth_code = input ("Enter some value: ")
+  auth_code = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkubG9naW4uZnllcnMuaW4iLCJpYXQiOjE2MzMzNjY2NzYsImV4cCI6MTYzMzM2Njk3NiwibmJmIjoxNjMzMzY2Njc2LCJhdWQiOiJbXCJ4OjBcIiwgXCJ4OjFcIiwgXCJ4OjJcIiwgXCJkOjFcIiwgXCJkOjJcIiwgXCJ4OjFcIiwgXCJ4OjBcIl0iLCJzdWIiOiJhdXRoX2NvZGUiLCJkaXNwbGF5X25hbWUiOiJYUjExNjAyIiwibm9uY2UiOiIiLCJhcHBfaWQiOiI5QlBORkdKSFo1IiwidXVpZCI6IjRlMjkwNTJhOTQ0MzRlMDhhZDA4OTY5MTBjY2ZkNTAyIiwiaXBBZGRyIjoiMjcuNTkuMTU2Ljg3Iiwic2NvcGUiOiIifQ.s6qq_PTm1EeHmlmcHk9Fy8B4R0F3pzEG6RfiYc5XgwQ
   session.set_token(auth_code)
   response = session.generate_token()
   access_token = response["access_token"]
