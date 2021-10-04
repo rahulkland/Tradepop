@@ -7,7 +7,7 @@ from fyers_api import accessToken
 
 client_id = '9BPNFGJHZ5-100'
 secret_key = 'LJCTDO2WQY'
-redirect_url = 'http://127.0.0.1:5000/login'
+redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 
 session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code')
 
