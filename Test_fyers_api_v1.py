@@ -4,10 +4,14 @@
 # AUTHORIZATION:
 from fyers_api import fyersModel
 from fyers_api import accessToken
+import requests
 
 client_id = '9BPNFGJHZ5-100'
 secret_key = 'LJCTDO2WQY'
 redirect_url = 'https://tradepop.com/TradeDhar/api-login'
+response_type = 'code'
+state = 'none'
+API_ENDPOINT = 'https://api.fyers.in/api/v2/generate-authcode'
 
 session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code')
 
@@ -22,6 +26,21 @@ print(' ')
 #This is also an optional field”
 
 # ------------------------------------  AUTH CODE ---------------------------------- #
+
+data = {'client_id':client_id,
+		'redirect_uri':redirect_url,
+		'response_type':response_type,
+		'state':state}
+    
+print(data)
+print()
+
+# sending post request and saving response as response object
+r = requests.post(API_ENDPOINT, data = {'key':'value'})
+
+# # extracting response text
+# pastebin_url = r.text
+print(r)
 
 auth_code = input ("Enter some value: ")
 session.set_token(auth_code)
@@ -41,6 +60,16 @@ fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 
 profilex = fyers.get_profile()
 print(profilex)
+
+# your source code here
+# source_code = '''
+# print("Hello, world!")
+# a = 1
+# b = 2
+# print(a + b)
+# '''
+
+
 
   # log_path = "This will create logs in the local system and that will be stored in the particular local address you have defined"
 
