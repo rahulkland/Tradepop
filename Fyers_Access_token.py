@@ -84,35 +84,35 @@ fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 # is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
 data = {
-      "symbol":"NSE:SBIN-EQ",
+      "symbol":"NSE:BANKNIFTY20OCTFUT",
       "qty":1,
       "type":1,
       "side":1,
       "productType":"INTRADAY",
-      "limitPrice":0,
+      "limitPrice":37000,
       "stopPrice":0,
       "validity":"DAY",
       "disclosedQty":0,
       "offlineOrder":"False",
       "stopLoss":0,
-      "takeProfit":0
+      "takeProfit":38000
     }
 
 profilex = fyers.place_order(data)
 print(profilex)
 
 data2 = {
-      "symbol":"NSE:SBIN-EQ",
+      "symbol":"NSE:BANKNIFTY20OCTFUT",
       "qty":1,
       "type":1,
       "side":1,
       "productType":"INTRADAY",
-      "limitPrice":300,
+      "limitPrice":37000,
       "stopPrice":0,
       "validity":"DAY",
       "disclosedQty":0,
       "offlineOrder":"True",
-      "stopLoss":250,
+      "stopLoss":36000,
       "takeProfit":0
     }
 
