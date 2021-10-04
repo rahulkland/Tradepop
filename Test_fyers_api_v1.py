@@ -36,20 +36,20 @@ print('Break')
 r = requests.get(response)
 
 # # extracting response text
-pastebin_url = r.json()
-print(r)
+#pastebin_url = r.code
+print(r.code)
 
 print('Break No 2')
 
-print(pastebin_url)
+print(r.auth_code)
 print('Break No 3')
 
 #auth_code = r["auth_code"]
 print('auth_code')
 
 print('Break No 4')
-authex = pastebin_url["auth_code"]
-print(authex)
+#authex = pastebin_url["auth_code"]
+#print(authex)
 
 print('Break No 5')
 session.set_token(auth_code)
