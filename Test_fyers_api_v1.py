@@ -5,7 +5,6 @@
 from fyers_api import fyersModel
 from fyers_api import accessToken
 import requests
-import json
 
 client_id = '9BPNFGJHZ5-100'
 secret_key = 'LJCTDO2WQY'
@@ -33,38 +32,41 @@ print(' ')
 print('Break')
 
 # sending post request and saving response as response object
-r = requests.get(response)
+# r = requests.get(response)
 
-r_attribs = [c for c in dir(r) if not c.startswith("_")]
-r_attribs
+# r_attribs = [c for c in dir(r) if not c.startswith("_")]
+# r_attribs
 
-# # extracting response text
-#pastebin_url = r.code
-print(r)
+# # # extracting response text
+# #pastebin_url = r.code
+# print(r)
 
-print('Break No 2')
+# print('Break No 2')
 
-print(r_attribs)
-print(r.content)
-print('Break No 3')
-print(r.headers)
+# print(r_attribs)
+# print(r.content)
+# print('Break No 3')
+# print(r.headers)
 
-print(r.json)
+# print(r.json)
 
-print(r.request)
+# print(r.request)
 
-print(r.links)
+# print(r.links)
 
-print(r.history)
+# print(r.history)
 
-#auth_code = r["auth_code"]
-print('auth_code')
+# #auth_code = r["auth_code"]
+# print('auth_code')
 
-print('Break No 4')
-#authex = pastebin_url["auth_code"]
-#print(authex)
+# print('Break No 4')
+# #authex = pastebin_url["auth_code"]
+# #print(authex)
 
-print('Break No 5')
+# print('Break No 5')
+
+auth_code = input('Enter auth_code: ')
+
 session.set_token(auth_code)
 response = session.generate_token()
 print(response)
@@ -80,7 +82,7 @@ fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 
 # is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
-profilex = fyers.get_profile()
+profilex = fyers.funds()
 print(profilex)
 
 # your source code here
