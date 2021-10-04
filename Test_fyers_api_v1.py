@@ -5,6 +5,7 @@
 from fyers_api import fyersModel
 from fyers_api import accessToken
 import requests
+import json
 
 client_id = '9BPNFGJHZ5-100'
 secret_key = 'LJCTDO2WQY'
@@ -45,9 +46,11 @@ print('Break No 3')
 
 #auth_code = r["auth_code"]
 print('auth_code')
+
 print('Break No 4')
 authex = pastebin_url["auth_code"]
 print(authex)
+
 print('Break No 5')
 session.set_token(auth_code)
 response = session.generate_token()
