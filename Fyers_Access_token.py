@@ -85,7 +85,7 @@ fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 
 data = {
       "symbol":"NSE:BANKNIFTY21OCTFUT",
-      "qty":1,
+      "qty":25,
       "type":1,
       "side":1,
       "productType":"INTRADAY",
@@ -103,7 +103,7 @@ print(profilex)
 
 data2 = {
       "symbol":"NSE:BANKNIFTY21O0737000PE",
-      "qty":1,
+      "qty":25,
       "type":1,
       "side":1,
       "productType":"INTRADAY",
