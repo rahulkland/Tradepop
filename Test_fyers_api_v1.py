@@ -35,13 +35,16 @@ print('Break')
 # sending post request and saving response as response object
 r = requests.get(response)
 
+r_attribs = [c for c in dir(r) if not c.startswith("_")]
+r_attribs
+
 # # extracting response text
 #pastebin_url = r.code
 print(r)
 
 print('Break No 2')
 
-print(r.url)
+print(r_attribs)
 print('Break No 3')
 
 #auth_code = r["auth_code"]
