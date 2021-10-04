@@ -11,7 +11,7 @@ secret_key = 'LJCTDO2WQY'
 redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 response_type = 'code'
 state = 'none'
-API_ENDPOINT = 'https://api.fyers.in/api/v2/generate-authcode'
+API_ENDPOINT = 'https://api.fyers.in/api/v2/generate-authcode?client_id=9BPNFGJHZ5-100&redirect_uri=https%3A%2F%2Ftradepop.com%2FTradeDhar%2Fapi-login&response_type=code&state=None'
 
 session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code')
 
@@ -27,16 +27,16 @@ print(' ')
 
 # ------------------------------------  AUTH CODE ---------------------------------- #
 
-data = {'client_id':client_id,
+# data = {'client_id':client_id,
 		'redirect_uri':redirect_url,
 		'response_type':response_type,
 		'state':state}
     
-print(data)
+# print(data)
 print()
 
 # sending post request and saving response as response object
-r = requests.post(API_ENDPOINT, data = {'key':'value'})
+r = requests.get(API_ENDPOINT) # data = {'key':'value'})
 
 # # extracting response text
 # pastebin_url = r.text
