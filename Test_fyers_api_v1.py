@@ -9,7 +9,7 @@ client_id = 'XR11602'
 secret_key = 'LJCTDO2WQY'
 redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 
-session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code', state='I hope the money is flowing today!)
+session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code', state='I hope the money is flowing today!')
 
 response = session.generate_authcode()
 print(response)
