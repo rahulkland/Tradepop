@@ -29,10 +29,10 @@ print(' ')
 
     
 # print(data)
-print()
+print('Break')
 
 # sending post request and saving response as response object
-r = requests.get(API_ENDPOINT) # data = {'key':'value'})
+r = requests.get(response) # data = {'key':'value'})
 
 # # extracting response text
 # pastebin_url = r.text
