@@ -40,7 +40,7 @@ fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 # is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
 profilex = fyers.get_profile()
-print(profilex["name"])
+print(profilex)
 
   # log_path = "This will create logs in the local system and that will be stored in the particular local address you have defined"
 
