@@ -22,34 +22,33 @@ print(response)
 
 # ------------------------------------  AUTH CODE ---------------------------------- #
 
-# def main()
+def main():
+  auth_code = input ("Enter some value: ")
+  session.set_token(auth_code)
+  response = session.generate_token()
+  access_token = response["access_token"]
+  # "You will be provided with the access_token which will have the below shown response" 
 
-#   auth_code = input ("Enter some value: ")
-#   session.set_token(auth_code)
-#   response = session.generate_token()
-#   access_token = response["access_token"]
-#   # "You will be provided with the access_token which will have the below shown response" 
+  # fyers = fyersModel.FyersModel(client_id=client_id, token=secret_key)
 
-#   fyers = fyersModel.FyersModel(client_id=123, token=ABC)
+  # is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
-#   is_async = True  #(By default the async will be False, Change to True for async API calls.)
+  # log_path = "This will create logs in the local system and that will be stored in the particular local address you have defined"
 
-#   # log_path = "This will create logs in the local system and that will be stored in the particular local address you have defined"
+  # def PlaceOrder(tradeSignal)
+  # data = {
+  #     "symbol":"tradeSignal",
+  #     "qty":1,
+  #     "type":1,
+  #     "side":1,
+  #     "productType":"INTRADAY",
+  #     "limitPrice":0,
+  #     "stopPrice":0,
+  #     "validity":"DAY",
+  #     "disclosedQty":0,
+  #     "offlineOrder":"False",
+  #     "stopLoss":0,
+  #     "takeProfit":0
+  #   }
 
-#   def PlaceOrder(tradeSignal)
-#   data = {
-#       "symbol":"tradeSignal",
-#       "qty":1,
-#       "type":1,
-#       "side":1,
-#       "productType":"INTRADAY",
-#       "limitPrice":0,
-#       "stopPrice":0,
-#       "validity":"DAY",
-#       "disclosedQty":0,
-#       "offlineOrder":"False",
-#       "stopLoss":0,
-#       "takeProfit":0
-#     }
-
-#     fyers.place_order(data)
+  #   fyers.place_order(data)
