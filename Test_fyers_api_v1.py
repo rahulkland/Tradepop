@@ -37,7 +37,7 @@ print(' ')
 
 fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 
-is_async = True  #(By default the async will be False, Change to True for async API calls.)
+# is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
 fyers.get_profile()
 
