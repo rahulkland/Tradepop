@@ -5,7 +5,7 @@
 from fyers_api import fyersModel
 from fyers_api import accessToken
 
-client_id = 'XR11602'
+client_id = '9BPNFGJHZ5-100'
 secret_key = 'LJCTDO2WQY'
 redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 
