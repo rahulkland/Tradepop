@@ -41,7 +41,7 @@ print(r)
 
 print('Break No 2')
 
-print(r.auth_code)
+print(r.text)
 print('Break No 3')
 
 #auth_code = r["auth_code"]
