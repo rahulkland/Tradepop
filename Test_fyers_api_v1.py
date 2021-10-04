@@ -38,7 +38,7 @@ r = requests.get(response) # data = {'key':'value'})
 # pastebin_url = r.text
 print(r)
 
-auth_code = input ("Enter some value: ")
+auth_code = response["auth_code"]
 session.set_token(auth_code)
 response = session.generate_token()
 print(response)
