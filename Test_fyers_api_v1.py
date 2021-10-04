@@ -65,7 +65,9 @@ print('Break')
 
 # print('Break No 5')
 
-auth_code = input('Enter auth_code: ')
+auth_code = response["data"]["authorization_code"]
+
+#auth_code = input('Enter auth_code: ')
 
 session.set_token(auth_code)
 response = session.generate_token()
