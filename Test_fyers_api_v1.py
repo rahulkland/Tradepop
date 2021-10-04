@@ -37,7 +37,7 @@ r = requests.get(response)
 
 # # extracting response text
 #pastebin_url = r.code
-print(r.code)
+print(r)
 
 print('Break No 2')
 
