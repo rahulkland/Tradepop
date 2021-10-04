@@ -12,7 +12,7 @@ redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code')
 
 response = session.generate_authcode()
-print(response)
+print(response+'\n')
 
 #scope=”The value in scope must be openid if being passed.
 #Though this is an optional field”
@@ -25,16 +25,18 @@ print(response)
 auth_code = input ("Enter some value: ")
 session.set_token(auth_code)
 response = session.generate_token()
-print(response)
+print(response+'\n')
 
 access_token = response["access_token"]
-print(access_token)
+print(access_token+'\n')
 
   # "You will be provided with the access_token which will have the below shown response" 
 
-  # fyers = fyersModel.FyersModel(client_id=client_id, token=secret_key)
+fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 
-  # is_async = True  #(By default the async will be False, Change to True for async API calls.)
+is_async = True  #(By default the async will be False, Change to True for async API calls.)
+
+fyers.get_profile()
 
   # log_path = "This will create logs in the local system and that will be stored in the particular local address you have defined"
 
