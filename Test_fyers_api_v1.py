@@ -12,7 +12,8 @@ redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code')
 
 response = session.generate_authcode()
-print(response+'\n')
+print(response)
+print(' ')
 
 #scope=”The value in scope must be openid if being passed.
 #Though this is an optional field”
@@ -25,10 +26,12 @@ print(response+'\n')
 auth_code = input ("Enter some value: ")
 session.set_token(auth_code)
 response = session.generate_token()
-print(response+'\n')
+print(response)
+print(' ')
 
 access_token = response["access_token"]
-print(access_token+'\n')
+print(access_token)
+print(' ')
 
   # "You will be provided with the access_token which will have the below shown response" 
 
