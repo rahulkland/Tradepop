@@ -55,3 +55,6 @@ def main():
   #   }
 
   #   fyers.place_order(data)
+  
+  if __name__ == __main__:
+    main()
