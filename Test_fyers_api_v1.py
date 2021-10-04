@@ -82,8 +82,41 @@ fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 
 # is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
-profilex = fyers.funds()
+data = {
+      "symbol":"MCX:SILVERMIC20NOVFUT",
+      "qty":1,
+      "type":1,
+      "side":1,
+      "productType":"INTRADAY",
+      "limitPrice":0,
+      "stopPrice":0,
+      "validity":"DAY",
+      "disclosedQty":0,
+      "offlineOrder":"False",
+      "stopLoss":0,
+      "takeProfit":0
+    }
+
+profilex = fyers.place_order(data)
 print(profilex)
+
+data2 = {
+      "symbol":"MCX:SILVERMIC20OCTFUT",
+      "qty":1,
+      "type":1,
+      "side":1,
+      "productType":"INTRADAY",
+      "limitPrice":300,
+      "stopPrice":0,
+      "validity":"DAY",
+      "disclosedQty":0,
+      "offlineOrder":"True",
+      "stopLoss":250,
+      "takeProfit":0
+    }
+
+profiley = fyers.place_order(data2)
+print(profiley)
 
 # your source code here
 # source_code = '''
