@@ -35,7 +35,7 @@ print('Break')
 r = requests.get(response)
 
 # # extracting response text
-pastebin_url = r.text
+pastebin_url = r.json()
 print(r)
 
 print('Break No 2')
@@ -43,8 +43,8 @@ print('Break No 2')
 print(pastebin_url)
 print('Break No 3')
 
-auth_code = r["auth_code"]
-print(auth_code)
+#auth_code = r["auth_code"]
+print('auth_code')
 print('Break No 4')
 authex = pastebin_url["auth_code"]
 print(authex)
