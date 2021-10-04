@@ -27,6 +27,9 @@ def main():
   session.set_token(auth_code)
   response = session.generate_token()
   access_token = response["access_token"]
+  
+  print(response)
+  print(access_token)
   # "You will be provided with the access_token which will have the below shown response" 
 
   # fyers = fyersModel.FyersModel(client_id=client_id, token=secret_key)
