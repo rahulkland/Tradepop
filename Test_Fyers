@@ -1,14 +1,18 @@
 # INSTALLATION:
-pip install fyers-apiv2
+# pip3 install fyers-apiv2
 
 # AUTHORIZATION:
 from fyers_api import fyersModel
 from fyers_api import accessToken
 
-session=accessToken.SessionModel(client_id=123, secret_key=ABC, redirect_uri='https://tradepop.in', 
-response_type='code', grant_type='authorization_code', state='I hope the money is flowing today!)
+client_id = 'XR11602'
+secret_key = 'LJCTDO2WQY'
+redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 
-response = session.generate_authcode()  
+session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code', state='I hope the money is flowing today!)
+
+response = session.generate_authcode()
+print(response)
 
 #scope=”The value in scope must be openid if being passed.
 #Though this is an optional field”
@@ -18,27 +22,34 @@ response = session.generate_authcode()
 
 # ------------------------------------  AUTH CODE ---------------------------------- #
 
-auth_code = "This will be the response of the session.generate_authcode() method once you click on the redirect_url you will be provided with the auth_code"
+# def main()
 
-session.set_token(auth_code)
-response = session.generate_token()
+#   auth_code = input ("Enter some value: ")
+#   session.set_token(auth_code)
+#   response = session.generate_token()
+#   access_token = response["access_token"]
+#   # "You will be provided with the access_token which will have the below shown response" 
 
-access_token = response["access_token"]
-"You will be provided with the access_token which will have the below shown response" 
+#   fyers = fyersModel.FyersModel(client_id=123, token=ABC)
 
-fyers = fyersModel.FyersModel(client_id=client_id, token=access_token,log_path="/home/Desktop/apiV2")
+#   is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
-is_async = True  #(By default the async will be False, Change to True for async API calls.)
+#   # log_path = "This will create logs in the local system and that will be stored in the particular local address you have defined"
 
-log_path = "This will create logs in the local system and that will be stored in the particular local address you have defined"
+#   def PlaceOrder(tradeSignal)
+#   data = {
+#       "symbol":"tradeSignal",
+#       "qty":1,
+#       "type":1,
+#       "side":1,
+#       "productType":"INTRADAY",
+#       "limitPrice":0,
+#       "stopPrice":0,
+#       "validity":"DAY",
+#       "disclosedQty":0,
+#       "offlineOrder":"False",
+#       "stopLoss":0,
+#       "takeProfit":0
+#     }
 
-----------------------------------------------------------------------------------------------------------------------------------------
- Sample Success Response 
----------------------------------------------------------------------------------------------------------------------------------------
-{
-    "s": "ok",
-    "code": 200,
-    "message": "",
-    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE2MDM4ODA4NTIsImV4cCI6MTYwMzkzMTQzMiwibmJmIjoxNjAzODgwODUyLCJhdWQiOlsieDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCZm1VZVVlSTJnYTVQR2pnNktPSXRoU1JxUklDOVlxeTdxYm1SLVEyR1NLY29OSjgxWEdXLVl1U1BjbzY1T2hESVprT1U1X2RRRUJwUE15M24zS1dQYjUyVkFnUW1BQ2JUZGNZRVRfbjJudEQ2QmYxND0iLCJkaXNwbGF5X25hbWUiOiJQSVlVU0ggUkFKRU5EUkEgS0FQU0UiLCJmeV9pZCI6IkRQMDA0MDQiLCJhcHBUeXBlIjoxMDB9.EquxH8D98KSoRzMcicIkGLszGubh_cCwwQXALP-OLOk"
-}
-
+#     fyers.place_order(data)
