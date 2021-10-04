@@ -2,8 +2,8 @@
 # pip3 install fyers-apiv2
 
 # AUTHORIZATION:
-# from fyers_api import fyersModel
-# from fyers_api import accessToken
+from fyers_api import fyersModel
+from fyers_api import accessToken
 
 # client_id = '9BPNFGJHZ5-100'
 # secret_key = 'LJCTDO2WQY'
