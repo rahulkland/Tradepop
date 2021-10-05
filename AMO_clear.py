@@ -76,7 +76,7 @@ def main():
     print(' ')
     orders = fyers.orderbook()
     
-    data = orders.json()
+    data = json.loads(orders)
     
     print(data)
     
