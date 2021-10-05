@@ -80,8 +80,9 @@ def main():
     
     print(orderBook)
     
-    for order in orderbook:
-        print(order.id)
+    for i in orderbook:
+        print(i["id"])
+        print(i[1])
       
     
     # print(data)
