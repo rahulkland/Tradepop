@@ -71,11 +71,13 @@ def main():
     
     ## ----- Cancel AMO order ----- ##
     
+    print(fyers.get_profile())
+    print(' ')
     orders = fyers.orderbook()
     
-    data = orders.orderBook["id"]
+    # data = orders.orderBook["id"]
     
-    print(data)
+    print(orders)
     
 
 # def update_handler(update):
