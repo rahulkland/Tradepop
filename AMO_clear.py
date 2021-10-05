@@ -77,7 +77,7 @@ def main():
     
     # data = orders.orderBook["id"]
     
-    print(orders)
+    print(orders[4])
     
 
 # def update_handler(update):
