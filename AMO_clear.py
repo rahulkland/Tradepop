@@ -90,7 +90,8 @@ def main():
             data = {"id":id_var}
             print(data) 
             print('')
-            fyers.cancel_order(data)
+            #respo = fyers.cancel_order(data)
+            #printt(respo)
        
      #print(data)
 # def update_handler(update):
