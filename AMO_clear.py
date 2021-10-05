@@ -24,7 +24,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 ################    FYERS CREDENTIALS ##########################
 
-access_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE2MzM0NjU2OTUsImV4cCI6MTYzMzQ4MDIxNSwibmJmIjoxNjMzNDY1Njk1LCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCaFhMVmZJMEFSVTdvM0ZFZTJtY245VWhja1NFRWxqRXFkYWk4YVl5aHU2S096UDZGNmY0aWhHM1AtUXRnZ0pmRzItOVpDZC1ENUl2ZmFVOTU4bDV6dHp1Zmw1RzdySm9MbGZnSzFfVFZyMi10eDZpdz0iLCJkaXNwbGF5X25hbWUiOiJSQUhVTCBWQVJNQSIsImZ5X2lkIjoiWFIxMTYwMiIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.argez5S1YJraAnPS-jCslV414RkHWLpfmtuNMprGnIs'
+# access_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE2MzM0NjU2OTUsImV4cCI6MTYzMzQ4MDIxNSwibmJmIjoxNjMzNDY1Njk1LCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCaFhMVmZJMEFSVTdvM0ZFZTJtY245VWhja1NFRWxqRXFkYWk4YVl5aHU2S096UDZGNmY0aWhHM1AtUXRnZ0pmRzItOVpDZC1ENUl2ZmFVOTU4bDV6dHp1Zmw1RzdySm9MbGZnSzFfVFZyMi10eDZpdz0iLCJkaXNwbGF5X25hbWUiOiJSQUhVTCBWQVJNQSIsImZ5X2lkIjoiWFIxMTYwMiIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.argez5S1YJraAnPS-jCslV414RkHWLpfmtuNMprGnIs'
 
 client_id = '9BPNFGJHZ5-100'
 secret_key = 'LJCTDO2WQY'
@@ -68,7 +68,7 @@ def main():
 
     fyers_app_id = "9BPNFGJHZ5-100"
 
-    # access_token = request_auth()
+    access_token = request_auth()
     
     fyers = fyersModel.FyersModel(client_id=fyers_app_id, token=access_token)
     
