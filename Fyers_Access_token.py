@@ -79,23 +79,22 @@ access_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkubG9naW4uZnl
 
   # "You will be provided with the access_token which will have the below shown response" 
 
-fyers = fyersModel.FyersModel('9BPNFGJHZ5-100', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE2MzM0MTE4MDAsImV4cCI6MTYzMzQ4MDIwMCwibmJmIjoxNjMzNDExODAwLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCaFctTFlPeVgyZzB6MnZyWm5Zb0NlMFZBNENxU2REQ0FUamlMNy1YMmhQV29ZX2tkcTM2QlF0RVlzTWg5cWZGZWJiOGYwYTJYbURPTkwyc2tNeUtSNUw4R1JuOXpXalVYQk5qV05OakJwUjlRcjZvbz0iLCJkaXNwbGF5X25hbWUiOiJSQUhVTCBWQVJNQSIsImZ5X2lkIjoiWFIxMTYwMiIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.6R816z-IwR_IH8-pgwqZEB6_IhsSzTb6P3AnVa7xSIs')
-
-# is_async = True  #(By default the async will be False, Change to True for async API calls.)
+fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
+is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
 data = {
-      "symbol":"NSE:BANKNIFTY21OCTFUT",
+      "symbol":"NSE:SBIN-EQ",
       "qty":25,
       "type":1,
       "side":1,
       "productType":"INTRADAY",
-      "limitPrice":37000,
+      "limitPrice":370,
       "stopPrice":0,
       "validity":"DAY",
       "disclosedQty":0,
       "offlineOrder":"False",
       "stopLoss":0,
-      "takeProfit":38000
+      "takeProfit":380
     }
 
 profilex = fyers.place_order(data)
