@@ -61,7 +61,7 @@ weeklyExpiryMonth = {"JAN": "1", "FEB": "2", "MAR": "3", "APR": "4", "MAY": "5",
 
 def main():
     # session_name = environ.get('TG_SESSION', 'session')
-    client = TelegramClient(username, api_id, api_hash)
+    # client = TelegramClient(username, api_id, api_hash)
 
     fyers_app_id = "9BPNFGJHZ5-100"
 
