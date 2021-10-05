@@ -76,7 +76,9 @@ def main():
     print(' ')
     orders = fyers.orderbook()
     
-    orderbook = orders.get('orderBook')
+    orderBook = orders.get('orderBook')
+    
+    print(orderBook)
     
     for order in orderbook:
         print(order.id)
