@@ -4,16 +4,16 @@
 # AUTHORIZATION:
 from fyers_api import fyersModel
 from fyers_api import accessToken
-import requests
+# import requests
 
-cid = '9BPNFGJHZ5-100'
+client_id = '9BPNFGJHZ5-100'
 secret_key = 'LJCTDO2WQY'
 redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 response_type = 'code'
 state = 'none'
 API_ENDPOINT = 'https://api.fyers.in/api/v2/generate-authcode?client_id=9BPNFGJHZ5-100&redirect_uri=https%3A%2F%2Ftradepop.com%2FTradeDhar%2Fapi-login&response_type=code&state=None'
 
-session=accessToken.SessionModel(client_id=cid, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code')
+session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code')
 
 response = session.generate_authcode()
 print(response)
@@ -80,9 +80,9 @@ print(' ')
 
   # "You will be provided with the access_token which will have the below shown response" 
 
-fyers = fyersModel.FyersModel(client_id=cid, token=access_token)
+fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 
-# is_async = True  #(By default the async will be False, Change to True for async API calls.)
+is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
 data = {
       "symbol":"NSE:BANKNIFTY20O0737000PE",
