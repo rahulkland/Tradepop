@@ -76,9 +76,13 @@ def main():
     print(' ')
     orders = fyers.orderbook()
     
-    data = json.loads(orders)
+    orderbook = orders.get('orderBook')
     
-    print(data)
+    for order in orderbook:
+        print(order.id)
+      
+    
+    # print(data)
     
 
 # def update_handler(update):
