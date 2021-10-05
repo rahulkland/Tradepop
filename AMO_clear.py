@@ -80,9 +80,14 @@ def main():
     
     # print(orderBook)
     
+    # id_var = 'id'
+    
     for i in orderBook:
         if i["message"] == '':
-            print(i["id"])
+            data = {"id":i["id"]}
+            print(data)
+            print('')
+            fyers.cancel_order(data)
        
 
 # def update_handler(update):
