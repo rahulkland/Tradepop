@@ -106,12 +106,12 @@ data2 = {
       "type":1,
       "side":1,
       "productType":"INTRADAY",
-      "limitPrice":3700,
+      "limitPrice":370,
       "stopPrice":0,
       "validity":"DAY",
       "disclosedQty":0,
       "offlineOrder":"False",
-      "stopLoss":3600,
+      "stopLoss":360,
       "takeProfit":0
     }
 
