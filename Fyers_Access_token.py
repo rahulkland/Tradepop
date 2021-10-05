@@ -12,7 +12,7 @@ redirect_url = 'https://tradepop.com/TradeDhar/api-login'
 response_type = 'code'
 state = 'none'
 API_ENDPOINT = 'https://api.fyers.in/api/v2/generate-authcode?client_id=9BPNFGJHZ5-100&redirect_uri=https%3A%2F%2Ftradepop.com%2FTradeDhar%2Fapi-login&response_type=code&state=None'
-access_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4iLCJpYXQiOjE2MzM0MTE4MDAsImV4cCI6MTYzMzQ4MDIwMCwibmJmIjoxNjMzNDExODAwLCJhdWQiOlsieDowIiwieDoxIiwieDoyIiwiZDoxIiwiZDoyIiwieDoxIiwieDowIl0sInN1YiI6ImFjY2Vzc190b2tlbiIsImF0X2hhc2giOiJnQUFBQUFCaFctTFlPeVgyZzB6MnZyWm5Zb0NlMFZBNENxU2REQ0FUamlMNy1YMmhQV29ZX2tkcTM2QlF0RVlzTWg5cWZGZWJiOGYwYTJYbURPTkwyc2tNeUtSNUw4R1JuOXpXalVYQk5qV05OakJwUjlRcjZvbz0iLCJkaXNwbGF5X25hbWUiOiJSQUhVTCBWQVJNQSIsImZ5X2lkIjoiWFIxMTYwMiIsImFwcFR5cGUiOjEwMCwicG9hX2ZsYWciOiJOIn0.6R816z-IwR_IH8-pgwqZEB6_IhsSzTb6P3AnVa7xSIs'
+access_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkubG9naW4uZnllcnMuaW4iLCJpYXQiOjE2MzM0MTY0MjMsImV4cCI6MTYzMzQxNjcyMywibmJmIjoxNjMzNDE2NDIzLCJhdWQiOiJbXCJ4OjBcIiwgXCJ4OjFcIiwgXCJ4OjJcIiwgXCJkOjFcIiwgXCJkOjJcIiwgXCJ4OjFcIiwgXCJ4OjBcIl0iLCJzdWIiOiJhdXRoX2NvZGUiLCJkaXNwbGF5X25hbWUiOiJYUjExNjAyIiwibm9uY2UiOiIiLCJhcHBfaWQiOiI5QlBORkdKSFo1IiwidXVpZCI6IjVmZDg1NzBkYzcxZDRhMTY4NGEwZjUyY2Q1NjBjZmEzIiwiaXBBZGRyIjoiMjcuNTkuMTc3LjE2Iiwic2NvcGUiOiIifQ.MOUH51PDTbfmUv9nP8OeOzA_4wgFER8rN3biGw-ByKk'
 
 # session=accessToken.SessionModel(client_id=client_id, secret_key=secret_key, redirect_uri=redirect_url, response_type='code', grant_type='authorization_code')
 
@@ -111,7 +111,7 @@ data2 = {
       "stopPrice":0,
       "validity":"DAY",
       "disclosedQty":0,
-      "offlineOrder":"True",
+      "offlineOrder":"False",
       "stopLoss":3600,
       "takeProfit":0
     }
