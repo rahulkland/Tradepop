@@ -80,7 +80,7 @@ def main():
     
     orderBook = orders.get('orderBook')
     
-    print(orderBook)
+    #print(orderBook)
     
     # id_var = 'id'
     
