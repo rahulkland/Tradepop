@@ -144,24 +144,5 @@ def request_auth():
 
 
 if __name__ == '__main__':
-    userDetails = ''
-    groupType = ''
-    if(len(sys.argv) >= 2):
-        userDetails = sys.argv[1]
-        if(userDetails.lower() == 'rahul'):
-            api_id = 8289565
-            api_hash = '7e958c4c4ea8f0cea7485196733ca4ad'
-            phone = '+919003199379'
-            username = '1273828837'
-        elif(userDetails.lower() == 'srikanth'):
-            api_id = 8648499
-            api_hash = 'b635f9d93e1d51a1119029e7a392a483'
-            phone = '+919790913870'
-            username = '1568072049'
-    if(len(sys.argv) >= 3):
-        groupType = sys.argv[2]
-        if (groupType.lower() == 'test'):
-            tradeSignalGroupName = 'Trade Signal Mocker'
-            tradeStatusGroupName = "Dharamik Signals Test"
 
     main()
