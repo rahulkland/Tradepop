@@ -91,7 +91,7 @@ def main():
             print(data) 
             print('')
             respo = fyers.cancel_order(data)
-            printt(respo)
+            print(respo)
             print('')
        
      #print(data)
