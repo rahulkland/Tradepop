@@ -58,6 +58,8 @@ messageFilter = ['Buy', 'Target']
 stockFilter = ['BankNifty', 'Nifty', '#BankNifty', '#Nifty']
 stopLossKeyWords = ['stoploss','sl','risk']
 
+data = {"id":'52110059312'}
+
 weeklyExpiryMonth = {"JAN": "1", "FEB": "2", "MAR": "3", "APR": "4", "MAY": "5", "JUN": "6", "JUL": "7", "AUG": "8", "SEP": "9", "OCT": "O", "NOV": "N", "DEC": "D"}
 
 def main():
@@ -82,9 +84,9 @@ def main():
     
     # id_var = 'id'
     
-    for i in orderBook:
-        if i["message"] == '':
-            id_var = i["id"]
+    for order in orderBook:
+        if order["message"] == '':
+            id_var = order["id"]
             data = {"id":id_var}
             print(data) 
             print('')
