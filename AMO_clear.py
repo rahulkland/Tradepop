@@ -85,7 +85,7 @@ def main():
     # id_var = 'id'
     
     for order in orderBook or []:
-        if order["message"] == '':
+        if order["message"] == '' and order["status"] == 6:
             id_var = order["id"]
             data = {"id":id_var}
             print(data) 
