@@ -86,7 +86,7 @@ def main():
         if i["message"] == '':
             id_var = i["id"]
             data = {"id":id_var}
-            print(data)
+            print(data) 
             print('')
             fyers.cancel_order(data)
        
