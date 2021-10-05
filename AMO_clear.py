@@ -87,9 +87,9 @@ def main():
             data = {"id":i["id"]}
             print(data)
             print('')
-            fyers.cancel_order(data)
+            # fyers.cancel_order(data)
        
-
+     print(data)
 # def update_handler(update):
 #     print(update)
 
