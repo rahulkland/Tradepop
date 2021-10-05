@@ -14,6 +14,7 @@ from os import environ
 from fyers_api import fyersModel
 from fyers_api import accessToken
 import requests
+import json
 
 import time
 from selenium import webdriver
@@ -75,9 +76,9 @@ def main():
     print(' ')
     orders = fyers.orderbook()
     
-    # data = orders.orderBook["id"]
+    data = orders.json()
     
-    print(orders[4])
+    print(data)
     
 
 # def update_handler(update):
