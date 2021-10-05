@@ -79,7 +79,7 @@ access_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhcGkuZnllcnMuaW4
 
   # "You will be provided with the access_token which will have the below shown response" 
 
-fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
+fyers = fyersModel.FyersModel('9BPNFGJHZ5-100', token=access_token)
 
 # is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
