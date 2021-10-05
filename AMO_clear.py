@@ -82,7 +82,7 @@ def main():
     
     for i in orderBook:
         print(i["id"])
-        print(i[1])
+        # print(i[1])
       
     
     # print(data)
