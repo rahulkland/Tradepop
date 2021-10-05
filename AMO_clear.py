@@ -81,12 +81,9 @@ def main():
     # print(orderBook)
     
     for i in orderBook:
-        print(i["id"])
-        # print(i[1])
-      
-    
-    # print(data)
-    
+        if i["message"] = '':
+            print(i["id"])
+       
 
 # def update_handler(update):
 #     print(update)
