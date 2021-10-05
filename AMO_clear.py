@@ -81,7 +81,7 @@ def main():
     # print(orderBook)
     
     for i in orderBook:
-        if i["message"] = '':
+        if i["message"] != '':
             print(i["id"])
        
 
