@@ -86,11 +86,11 @@ is_async = True  #(By default the async will be False, Change to True for async 
 
 data = {
       "symbol":"NSE:BANKNIFTY21O0737000PE",
-      "qty":1,
+      "qty":25,
       "type":1,
       "side":1,
       "productType":"INTRADAY",
-      "limitPrice":0,
+      "limitPrice":200,
       "stopPrice":0,
       "validity":"DAY",
       "disclosedQty":0,
@@ -103,8 +103,8 @@ profilex = fyers.place_order(data)
 print(profilex)
 
 data2 = {
-      "symbol":"NSE:BANKNIFTY21O0737000PE",
-      "qty":1,
+      "symbol":"NSE:SBIN-EQ",
+      "qty":10,
       "type":1,
       "side":1,
       "productType":"INTRADAY",
@@ -112,7 +112,7 @@ data2 = {
       "stopPrice":0,
       "validity":"DAY",
       "disclosedQty":0,
-      "offlineOrder":"True",
+      "offlineOrder":"False",
       "stopLoss":250,
       "takeProfit":0
     }
