@@ -10,12 +10,6 @@ from os import environ
 # environ is used to get API information from environment variables
 # You could also use a config file, pass them as arguments,
 # or even hardcode them (not recommended)
-from telethon import TelegramClient, events, utils
-import re
-import sys
-import json
-import OrderExecution
-import FyersRequest
 
 from fyers_api import fyersModel
 from fyers_api import accessToken
