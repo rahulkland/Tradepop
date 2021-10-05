@@ -85,7 +85,7 @@ fyers = fyersModel.FyersModel(client_id=client_id, token=access_token)
 is_async = True  #(By default the async will be False, Change to True for async API calls.)
 
 data = {
-      "symbol":"NSE:BANKNIFTY20O0737000PE",
+      "symbol":"NSE:BANKNIFTY21O0737000PE",
       "qty":1,
       "type":1,
       "side":1,
@@ -103,7 +103,7 @@ profilex = fyers.place_order(data)
 print(profilex)
 
 data2 = {
-      "symbol":"NSE:BANKNIFTY20O0737000PE",
+      "symbol":"NSE:BANKNIFTY21O0737000PE",
       "qty":1,
       "type":1,
       "side":1,
