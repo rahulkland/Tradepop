@@ -80,7 +80,7 @@ def main():
     
     orderBook = orders.get('orderBook')
     
-    # print(orderBook)
+    print(orderBook)
     
     # id_var = 'id'
     
@@ -91,8 +91,8 @@ def main():
             print(data) 
             print('')
             respo = fyers.cancel_order(data)
-            print(respo)
-            print('')
+            #print(respo)
+            #print('')
        
      #print(data)
 # def update_handler(update):
